@@ -10,4 +10,4 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 监听 Cloud Run 默认端口
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "bot:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "app:app"]
